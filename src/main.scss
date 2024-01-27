@@ -1,0 +1,47 @@
+@use '_headings';
+@use 'colors';
+@use 'styles';
+
+
+.text-center{
+    text-align:center;
+}
+
+@mixin theme($theme: colors.$primary-color) {
+    border: 2px solid colors.$primary-color;
+    width:700px;
+}
+
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: #EFEFEF;
+}
+
+header{
+    @include theme;
+}
+
+main{
+    @include theme;
+
+    p{
+        color: colors.$secondary-color;
+    }
+
+    .btn{
+        @include styles.btn(colors.$tertiary-color);
+    }
+}
+
+footer{
+    @include theme;
+
+    .copyright{
+        color: colors.$secondary-color;
+    }
+}
+
+

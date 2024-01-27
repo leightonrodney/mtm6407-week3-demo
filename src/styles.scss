@@ -1,0 +1,13 @@
+@use 'colors';
+
+// Button styles
+@mixin btn($theme: colors.$primary-color){
+    display:block;
+    padding: 20px 10px;
+    width:100px;
+    border-radius:6px;
+    margin: 20px auto;
+    text-decoration: none;
+    background-color: $theme;
+    color: #FFF;
+}
