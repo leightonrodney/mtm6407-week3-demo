@@ -1,6 +1,7 @@
 @use '_headings';
 @use 'colors';
 @use 'styles';
+@use 'typography';
 
 
 .text-center{
@@ -17,6 +18,7 @@ body{
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: typography.$secondary-font-family;
     background-color: #EFEFEF;
 }
 
