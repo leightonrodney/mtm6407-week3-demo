@@ -47,6 +47,7 @@ main .btn {
   border-radius: 6px;
   margin: 20px auto;
   text-decoration: none;
+  text-align: center;
   background-color: green;
   color: #FFF;
 }
